@@ -200,10 +200,17 @@
     align-items:start;
   }
   .about-media{
+    width:100%;
+    height:100%;
     aspect-ratio:1/1.1;
     border-radius:var(--radius-lg);
     background:linear-gradient(160deg, var(--ciruela-oscura), var(--negro-eclipse));
     border:1px solid var(--border-subtle);
+    object-fit:cover;
+    object-position:center top;
+    display:block;
+    min-width:0;
+    overflow:hidden;
   }
   .about-content h2{ font-size:32px; margin:10px 0 4px; }
   .about-content .role{
@@ -434,7 +441,7 @@
   </section>
 
   <section class="about" id="sobre-mi">
-    <img src="spiderman.png" alt="Spider-Man" class="about-media" style="object-fit:cover;">
+    <img src="spiderman.png" class="about-media" alt="Spider-Man">
     <div class="about-content">
       <span class="eyebrow">Sobre mi</span>
       <h2>Sebastián Velásquez Pérez</h2>
